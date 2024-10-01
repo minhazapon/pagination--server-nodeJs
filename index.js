@@ -5,8 +5,6 @@ const app = express()
 const port = process.env.PORT || 5000
 
 
-//paginateDB
-//paginate123
 
 
 console.log(process.env.DB_USERS)
@@ -42,9 +40,9 @@ async function run() {
 
     const PaginateCollection = client.db('paginateDB').collection('paginate')
      
-    //crudWithpaginate//
+    //crudWithPaginate//
 
-
+ 
      
     app.get('/paginate',  async(req, res) => {
       
@@ -55,11 +53,7 @@ async function run() {
 
     })
     
-
-
-
-
-    //crudWithpaginate//
+    //crudWithPaginate//
 
 
 
